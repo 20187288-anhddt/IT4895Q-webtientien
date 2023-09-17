@@ -79,7 +79,7 @@ router.post('/search', verify, (req, res) => {
 
             posts = posts.filter(item => !found_posts.includes(item))
 
-            // condition 3: 20% of keyword in described and in the right order
+            // condition 3: 20% of keyword in described and in the right order 
             num_words = Math.ceil(words.length*0.2)
             console.log("num words: " + num_words)
             search_text = []
@@ -244,7 +244,7 @@ router.post('/get_saved_search', verify, (req, res) => {
 })
 
 
-// API del_saved_search
+// API : del_saved_search
 router.post('/del_saved_search', verify, async (req, res) => {
     var { search_id, all } = req.query
     if (search_id !== 0 && !search_id && all !== 0 && !all) {
