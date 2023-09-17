@@ -174,7 +174,7 @@ router.post('/search', verify, (req, res) => {
 })
 
 
-// get saved search
+// get: saved search
 router.post('/get_saved_search', verify, (req, res) => {
     var { index, count } = req.query;
     // PARAMETER_IS_NOT_ENOUGH
