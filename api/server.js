@@ -40,4 +40,4 @@ app.use(function (err, req, res, next) {
 })
 
 const port = process.env.PORT || 6000;
-app.listen(port, () => console.log(`Server chạy cổng ${port}`))
+app.listen(port, () => console.log(`Server đang chạy cổng ${port}`))
